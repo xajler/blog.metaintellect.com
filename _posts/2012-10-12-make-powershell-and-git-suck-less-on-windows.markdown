@@ -247,3 +247,8 @@ If you're done everything from this post then everything should work just fine!
 The outcome of whole post is to have something at the end of the day:
 
 {% img http://i46.tinypic.com/25ian4n.png %}
+
+And just for comparison the _Terminal iTerm2_ on my _Mac OS X Mountain Lion_ with _zsh shell_
+and very short aliases, pure awesomeness:
+
+{% img http://i46.tinypic.com/33fggut.png %}
