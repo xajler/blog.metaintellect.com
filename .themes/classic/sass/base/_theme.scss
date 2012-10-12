@@ -76,6 +76,8 @@ a { text-decoration: none; }
 a:link, a:visited { color: #3A87AD; font-weight: bold; }
 a:hover { color: #f90; text-decoration: underline; }
 
+em { color: #505DB0; }
+
 html {
   background: $page-bg image-url('line-tile.png') top left;
 }
