@@ -2,13 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://xajler.github.com
+url: http://learnaholic.me
 title: Learn-a-holic Geek Notes
 subtitle: Human compiled Brainwork by Kornelije Sajler.
 author: Kornelije Sajler
 simple_search: http://google.com/search
-description: Tips, tricks, and hacks on Ruby on Rails development.
-keywords: ruby,ruby on rails,gem,web development,backbone,postgresql,git,github
+description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -28,17 +27,17 @@ email: xajler@gmail.com
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
-permalink: /blog/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 source: source
 destination: public
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: categories
 markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+pagination_dir:       # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
