@@ -19,7 +19,7 @@ The things missing in _Powershell_:
 * The config dir is in `Documents\WindowsPowerShell` (WTF).
 
 Maybe to most Windows users this is strange because this kind of stuff is never used, but if
-your coming from _Linux_ or _Mac_ then the frustration is certain. Because _Linux_ or _Mac_ are
+you're coming from _Linux_ or _Mac_ then the frustration is certain. Because _Linux_ or _Mac_ are
 having great Terminal and working in them is just a joy.
 
 The aim of post is to install _git_ on Windowns and then configure it.
@@ -168,7 +168,8 @@ Click the small _Powershell_ icon in top left corner, and in the context menu cl
 #### Options Tab
 
 In `Edit Options` check the `QuickEdit Mode`. Quick edit mode enables selecting text from
-anywhere in _Powershell_ and on single right-click pastes the text where the blinking cursor
+anywhere in _Powershell_ and with right-click it will copy the selected content.
+Also with single right-click pastes the text where the blinking cursor
 currently is, similar to _putty_.
 
 This option really boosts the productivity in _Powershell_, it is too bad that this is
