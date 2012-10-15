@@ -4,6 +4,8 @@ title: "Installing nginx in Mac OS X Mountain Lion with homebrew"
 date: 2012-10-10 03:45
 comments: true
 categories: [nginx, mac os x, homebrew]
+keywords: nginx, mac os x, homebrew, mac os x mountain lion
+description: Installing and configuring nginx in Mac OS X Mountain Lion with homebrew.
 ---
 
 

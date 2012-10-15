@@ -4,6 +4,8 @@ title: "Backing up PostgreSQL with backup and whatever gems on VPS"
 date: 2012-10-10 07:12
 comments: true
 categories: [backup, postgresql, whatever, gem, vps]
+keywords: backup, postgresql, whatever, gem, vps
+description: Backing up PostgreSQL with backup gem and scheduling backups with whatever gem on VPS.
 ---
 
 ## Mission

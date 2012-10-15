@@ -4,6 +4,8 @@ title: "Make Powershell, SSH Github and git suck less on Windows"
 date: 2012-10-12 03:41
 comments: true
 categories: [powershell, git, github]
+keywords: powershell, git, github, windows, ssh key, posh-git, msysgit
+description: Installing the msysgit, configuring git, creating SSH keys for Github, customize the Powershell, installing posh-git. Windows suck less after.
 ---
 
 There are two Terminals in Windows _Command Prompt_ and _Powershell_, and they both suck by far.

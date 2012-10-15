@@ -4,6 +4,8 @@ title: "Deploying Octopress to Github Pages and setting custom subdomain CNAME"
 date: 2012-10-10 23:49
 comments: true
 categories: [octopress, github, github pages]
+keywords: octopress, github, github pages
+description: Deploying Octopress to Github Pages and setting blog to custom subdomain provided with CNAME to Github Pages.
 ---
 
 Blogging was really never easy task for me, I started in 2006 with [WordPress](http://wordpress.com) but with short life.
