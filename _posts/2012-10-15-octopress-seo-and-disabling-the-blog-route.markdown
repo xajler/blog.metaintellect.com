@@ -155,6 +155,14 @@ permalink: /:year/:month/:day/:title/
 category_dir: categories
 ```
 
+Now the url should look like this:
+
+    http://learnaholic.me/2012/10/15/octopress-seo-and-disabling-the-blog-route/
+
+But by default it would be:
+
+    http://learnaholic.me/blog/2012/10/15/octopress-seo-and-disabling-the-blog-route/
+
 ## Conclusion
 
 Improved SEO of the Octopress site:
