@@ -33,10 +33,10 @@ create  app
 ...
 ```
 
-I had capitalized `JustToDoIt` before the name is used as Ruby class and Pascal case is convention
+I had capitalized `JustToDoIt` before, because the name is used as Ruby class and Pascal case is convention
 for Ruby classes.
 
-Then rename it to `just-todo-it` to be more in *nix folder naming convention.
+Then rename folder to `just-todo-it` to be more in *nix folder naming convention:
 
 ```bash
 $ mv JustToDoIt just-todo-it
@@ -105,7 +105,7 @@ $ bundle install
 ### Main and Production Ruby Gems
 
 * [rails][3] - The latest one `3.2.8` for this time of writing.
-* [bcrypt-ruby][4] - Needed for password hashing and app authentication.
+* [bcrypt-ruby][4] - Needed for password hashing.
 * [unicorn][5] - For production, it will run as [Rack][6] HTTP Server.
 * [haml][7] - My favorite View rendering engine.
 * [thin][8] - _Thin_ as local server instead of default _Webrick_.
@@ -115,14 +115,14 @@ $ bundle install
 
 * [sqlite3][10] - The database used for development and testing environments.
 * [rspec-rails][11] - RSpec as default testing framework.
-* [pry][12] - Using as default _Interactive Ruby_ console instead of `irb`. Needs some configuration to be hooked to `rails console`.
+* [pry][12] - Using as default _Interactive Ruby_ console instead of `irb`. Needs some configuration to be hooked as `rails console`.
 * [factory_girl_rails][13] - The testing factory framework, used instead of the default _Fixtures_.
 * [database_cleaner][14] - Used to speed-up tests, in my case to encapsulate the tests into db transaction.
 * [awesome_print][15] - Used by _Pry_ to pretty prints Ruby objects in full color exposing their internal structure with proper indentation.
 * [capybara][16] - for simulating the web interaction in the tests.
 * [guard-rspec][17] - To refresh and run the tests upon saving via [rb-fsevent][18].
 * [spork][19] - The server to speed up tests, how?, see provided link.
-* [guard-sprok][20] - Refreshes the sprok server on change-, so that we don't need to.
+* [guard-spork][20] - Refreshes the spork server on changes, so that we don't need to.
 
 
 ## Testing configuration
@@ -222,17 +222,20 @@ Spork.each_run do
 end
 ```
 
-It uses _Spork_ server and the aim is to have most things in `prefork` this is one time only
-initialization, and `each_run` only necessary things, we are now having only reloading of
-_Factory Girl_, but maybe we will add something from `prefork` if we would have some troubles with testing data.
+It uses _Spork_ server and the aim is to have most things in `prefork` block where is
+stuff run on load of _Spork_.
 
-_DatabaseCleaner_ is used to start on each before and clean it on after running, and of
-course the strategy used for _DatabaseCleaner_ is transaction, meaning to have rollback
-after the queries in transaction are finished.
+In `each_run` block we want put only necessary things, because it runs each time,
+we are now having only reloading of _Factory Girl_ factories, but maybe we will add something
+from `prefork` if we would have some troubles with testing data.
+
+_DatabaseCleaner_ is used to start, on before and clean it, on after running.
+The strategy used for _DatabaseCleaner_ is transaction, meaning to rollback
+changes after the transaction queries are finished.
 
 ### Run Guard
 
-The everything is setup, the _Guard_ can be run:
+The testing environment is now configured, the _Guard_ can be run:
 
 ```bash
 $ guard
@@ -387,7 +390,7 @@ $ git remote add origin git@github.com:xajler/just-todo-it.git
 
 ### Push to the Github
 
-After we add remote it is now safe to push changes to _Github_ remote repository:
+After we add remote, it is now safe to push changes to _Github_ remote repository:
 
 ```
 $ git push -u origin master
