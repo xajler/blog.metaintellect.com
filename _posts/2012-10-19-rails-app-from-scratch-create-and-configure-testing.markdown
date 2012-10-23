@@ -3,7 +3,9 @@ layout: post
 title: "Rails App from Scratch: Create and Configure for Testing"
 date: 2012-10-19 06:28
 comments: true
-categories:
+categories: [rails, ruby, TDD, rspec, guard, sprok, pry, git, github]
+keywords: rails, ruby, TDD, rspec, guard, sprok, pry, git, github
+description: The Rails 3 App from Scratch, creating and configuring TDD testing, including - RSpec, guard, sprok. Setting up Pry, and git as source control.
 ---
 
 
