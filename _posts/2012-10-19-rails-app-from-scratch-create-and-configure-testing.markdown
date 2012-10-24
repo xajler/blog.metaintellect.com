@@ -188,6 +188,7 @@ And edit to include this content:
 ```ruby spec_helper.rb
 require 'rubygems'
 require 'spork'
+require 'database_cleaner'
 
 Spork.prefork do
   ENV["RAILS_ENV"] ||= 'test'
@@ -197,30 +198,20 @@ Spork.prefork do
 
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+  DatabaseCleaner.strategy = :truncation
+
   RSpec.configure do |config|
     config.mock_with :rspec
     config.include FactoryGirl::Syntax::Methods
     config.use_transactional_fixtures = true
     config.infer_base_class_for_anonymous_controllers = false
     config.order = "random"
-
-    config.before :suite do
-      DatabaseCleaner.strategy = :transaction
-      DatabaseCleaner.clean_with(:truncation)
-    end
-
-    config.before do
-      DatabaseCleaner.start
-    end
-
-    config.after do
-      DatabaseCleaner.clean
-    end
-  end
+   end
 end
 
 Spork.each_run do
   FactoryGirl.reload
+  DatabaseCleaner.clean
 end
 ```
 
