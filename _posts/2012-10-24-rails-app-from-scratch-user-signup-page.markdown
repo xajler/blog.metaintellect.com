@@ -26,7 +26,7 @@ The `User` Model will be very simple having only:
 
 ## Generate User Integration Test
 
-First we will start with generating Rails `integration_test` residing in `spec/resuorces` folder:
+First we will start with generating Rails `integration_test` residing in `spec/requests` folder:
 
 ```bash
 $ rails g integration_test users
