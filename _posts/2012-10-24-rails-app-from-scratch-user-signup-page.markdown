@@ -436,3 +436,11 @@ It should work just fine!
 This post intended to absorb whole authentication of user, but currently is just too long
 and I will stop here and in second post will introduce validation, saving and maybe yet
 in third post authenticating and updating user!
+
+## Code
+
+The code is hosted on GitHub and can be cloned from the [xajler/just-todo-it](https://github.com/xajler/just-todo-it).
+
+> Github xajler/just-todo-it commit for this post:
+>
+> [reated User Controller, Model and View for Sign Up or Create User, created two integration tests, changed spec_helper due issues between the database_claner and sprok.](https://github.com/xajler/just-todo-it/commit/f2edd5551c915bba59b3aabb8c894325cf4f5414)

@@ -397,10 +397,6 @@ To git@github.com:xajler/just-todo-it.git
 Branch master set up to track remote branch master from origin.
 ```
 
-> Github xajler/just-todo-it commit:
->
-> [Initial Commit. Created initial Rails app, added all needed Gems, testing configured][21]
-
 ## Conclusion
 
 It this first part we have created a `JustToDoIt` Rails application.
@@ -417,7 +413,15 @@ configure the testing environment including:
 And for the end we setup the _Pry_ to be a default for _Rails_ console and commit the
 source to the _Github_ repository [xajler/just-todo-it][22].
 
-In second post we shall go with the creating the app logic in _TDD_ manner!
+In second post we shall go with the creating the app logic in _TDD_ way!
+
+## Code
+
+The code is hosted on GitHub and can be cloned from the [xajler/just-todo-it][22].
+
+> Github xajler/just-todo-it commit for this post:
+>
+> [Initial Commit. Created initial Rails app, added all needed Gems, testing configured][21]
 
 [1]: http://justtodoit.com
 [2]: http://metaintellect.com
