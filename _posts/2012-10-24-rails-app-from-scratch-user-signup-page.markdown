@@ -443,4 +443,4 @@ The code is hosted on GitHub and can be cloned from the [xajler/just-todo-it](ht
 
 > Github xajler/just-todo-it commit for this post:
 >
-> [reated User Controller, Model and View for Sign Up or Create User, created two integration tests, changed spec_helper due issues between the database_claner and sprok.](https://github.com/xajler/just-todo-it/commit/f2edd5551c915bba59b3aabb8c894325cf4f5414)
+> [Created User Controller, Model and View for Sign Up or Create User, created two integration tests, changed spec_helper due issues between the database_cleaner and sprok.](https://github.com/xajler/just-todo-it/commit/7ee07ec64ca652f4840da8463ad3ce0d1efe64c6)
