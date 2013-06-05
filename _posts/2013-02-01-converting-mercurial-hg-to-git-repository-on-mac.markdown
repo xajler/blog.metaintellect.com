@@ -3,6 +3,7 @@ layout: post
 title: "Converting Mercurial (hg) to Git repository on Mac"
 date: 2013-02-01 14:16
 categories: [git, hg]
+comments: true
 keywords: Git, Hg, Mercurial, Converting Mercurial to Git, git repository, hg repository.
 description: Converting the Mercurial (hg) repository to Git repository with Fast Export on Mac.
 ---
@@ -76,6 +77,13 @@ And aftrer the conversion is applied run the checkout:
 
 ```bash
 $ git checkout HEAD
+```
+
+Beware if you have a lots of branches, that pushing `master` will only push master. To push evrything to the remote
+use:
+
+```bash
+$ git push --all origin
 ```
 
 And now all commits and previous branches are converted to Git!
