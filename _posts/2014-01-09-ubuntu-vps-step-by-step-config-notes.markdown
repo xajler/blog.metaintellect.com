@@ -281,7 +281,7 @@ The install will prompt you for `root` user password that needs to be re-entered
 
 Use mysql command line app for interacting with _MySQL_, lets create user and DB with user granted on this DB:
 
-    mysql> CREATE DATABASA <DB_NAME>;
+    mysql> CREATE DATABASE <DB_NAME>;
     mysql> SHOW DATABASES;  # The new db should be listed.
     mysql> CREATE USER '<DB_USERNAME>'@'localhost';
     mysql> SELECT User,Host FROM mysql.user; # The new user should be listed on host localhost.
